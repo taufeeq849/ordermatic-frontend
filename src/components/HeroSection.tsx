@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Left side - Text Content */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-          Stop missing orders - automate customer interactions 24/7 on whatsapp
+          Stop Missing Orders - Automate Customer Interactions 24/7 on WhatsApp
         </h1>
         <p className="text-ordermatic-secondaryText text-lg mb-6">
           Ordermatic&apos;s AI manages bookings, support, and orders instantly on WhatsApp—so you never lose a sale or waste time on calls again.

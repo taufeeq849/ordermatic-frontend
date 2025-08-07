@@ -1,10 +1,38 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Learn how Ordermatic collects, uses, and protects your personal information. Our privacy policy outlines our data practices for our AI-powered WhatsApp solutions.",
+  keywords: [
+    'privacy policy',
+    'data protection',
+    'information security',
+    'Ordermatic privacy',
+    'WhatsApp automation privacy',
+    'business data protection'
+  ],
+  openGraph: {
+    title: "Privacy Policy - Ordermatic",
+    description: "Learn how Ordermatic protects your data and privacy while providing AI-powered WhatsApp solutions.",
+    url: "https://www.ordermatic.ai/privacy-policy",
+  },
+  twitter: {
+    title: "Privacy Policy - Ordermatic",
+    description: "Learn how Ordermatic protects your data and privacy while providing AI-powered WhatsApp solutions.",
+  },
+  alternates: {
+    canonical: "https://www.ordermatic.ai/privacy-policy",
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen flex flex-col">
+      <StructuredData type="privacy" />
       <Navbar />
       <div className="flex-1 max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>

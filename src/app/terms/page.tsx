@@ -1,10 +1,38 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description: "Read Ordermatic's terms and conditions for using our AI-powered WhatsApp business solutions. Learn about our service policies, user responsibilities, and agreement terms.",
+  keywords: [
+    'terms and conditions',
+    'terms of service',
+    'service agreement',
+    'Ordermatic terms',
+    'WhatsApp automation terms',
+    'business service terms'
+  ],
+  openGraph: {
+    title: "Terms & Conditions - Ordermatic",
+    description: "Read our terms and conditions for using Ordermatic's AI-powered WhatsApp business solutions.",
+    url: "https://www.ordermatic.ai/terms",
+  },
+  twitter: {
+    title: "Terms & Conditions - Ordermatic",
+    description: "Read our terms and conditions for using Ordermatic's AI-powered WhatsApp business solutions.",
+  },
+  alternates: {
+    canonical: "https://www.ordermatic.ai/terms",
+  },
+};
 
 export default function TermsPage() {
   return (
     <main className="min-h-screen flex flex-col">
+      <StructuredData type="terms" />
       <Navbar />
       <div className="flex-1 max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
