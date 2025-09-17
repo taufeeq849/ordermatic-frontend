@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import StructuredData from "@/components/StructuredData";
+import { Analytics } from '@vercel/analytics/react';
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -93,6 +94,7 @@ export default function RootLayout({
       </head>
       <body className={cn(dmSans.className, "antialiased")}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
