@@ -20,7 +20,7 @@ const StructuredData = ({ type = 'homepage' }: StructuredDataProps) => {
         "availableLanguage": "English"
       },
       "sameAs": [
-        "https://twitter.com/ordermatic",
+        "https://www.instagram.com/ordermaticai/",
         "https://linkedin.com/company/ordermatic"
       ]
     };

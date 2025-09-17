@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Twitter, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -25,13 +25,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-4 mb-6">
-          <Link href="#" className="p-2 bg-white rounded-full" aria-label="Twitter">
-            <Twitter className="h-4 w-4 text-ordermatic-blue" />
-          </Link>
-          <Link href="#" className="p-2 bg-white rounded-full" aria-label="Facebook">
-            <Facebook className="h-4 w-4 text-ordermatic-blue" />
-          </Link>
-          <Link href="#" className="p-2 bg-white rounded-full" aria-label="Instagram">
+          <Link href="https://www.instagram.com/ordermaticai/" className="p-2 bg-white rounded-full" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
             <Instagram className="h-4 w-4 text-ordermatic-blue" />
           </Link>
         </div>
